@@ -25,7 +25,7 @@ dd <- function(x, na.rm = FALSE){
               sum = sum + d
            }
   
-         return ((sum/n)/xmean)
+         return ((sqrt(sum/n))/xmean)
     }
 
 aggregate(test[,2],list(test[,1]),dd)
